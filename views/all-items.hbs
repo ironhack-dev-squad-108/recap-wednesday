@@ -1,0 +1,10 @@
+<h1>All items</h1>
+
+<ul>
+{{#each items}}
+  <li>
+    {{this.name}}: {{this.price}}€ - 
+    <a href="/items/{{this._id}}/edit">Edit</a>
+  </li>
+{{/each}}
+</ul>
